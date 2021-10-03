@@ -427,7 +427,7 @@ async def play(_, message: Message):
 
                           try:
                               await USER.join_chat(invitelink)
-                              await USER.send_message(message.chat.id,"I joined this group for playing music in VC")
+                              await USER.send_message(message.chat.id,"I AM Doremon's 𝙑𝘾 𝘼𝙎𝙎𝙄𝙎𝙏𝘼𝙉𝙏 I joined this group for playing music in VC")
                               await lel.edit(
                                   "<b>helper userbot joined your chat</b>",
                               )
@@ -478,7 +478,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Song not found.Try another song or maybe spell it properly.OR REPORT THESE ISSUE TO @LOVELY_5UPPORT.")
+        await lel.edit("Song not found.Try another song or maybe spell it properly.OR REPORT THESE ISSUE TO @Ishqwale .")
         print(str(e))
         return
 
@@ -494,7 +494,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton('YouTube 🎥', url=f'{url}'),
                     InlineKeyboardButton('Close 🗑', callback_data='cls')
                 ],[
-                    InlineKeyboardButton("📣 Channel", url=f"https://t.me/ABOUTVEDMAT")  
+                    InlineKeyboardButton("📣 Channel", url=f"https://t.me/Mr_Robo_Official")  
                 ]                             
             ]
         )
@@ -512,7 +512,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Your requested song **queued** at position {position}! JOIN @LOVELY_NETWORK",
+        caption=f"#⃣ Your requested song **queued** at position {position}! JOIN @ROBO_NETWORK",
         reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -534,7 +534,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** Here The Song Requested By {} JOIN @LOVELY_NETWORK".format(
+        caption="▶️ **Playing** Here The Song Requested By {} JOIN @ROBO_NETWORK".format(
         message.from_user.mention()
         ),
     )
